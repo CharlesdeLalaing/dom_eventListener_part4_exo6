@@ -18,7 +18,22 @@
 let exo1 = document.getElementById('content');
 
 function exo2(e) {
-    e.target.style.border = 'red solid 1px' ;
+    console.log(e);
+    // e.target.style.border = 'red solid 1px' ;
 }
 
 exo1.addEventListener('click', exo2)
+
+
+//corretion
+
+let div_content = document.getElementById('content');
+function exo6a(e) {
+    console.log(e.target);
+    e.target.setAttribute('style' , 'border:solid 1px red')
+}
+div_content.addEventListener('click',exo6a);
+
+// div_content.addEventListener('click',(e)=>{
+//     console.log(e.target);
+// })
